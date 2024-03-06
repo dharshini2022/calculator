@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.heading {
+    background-color: #9613d7;
+    color: white;
+    position: absolute;
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 20px;
+    padding: 0px 27px;
+    border-radius: 15px;
+
+}
+
+.calculator {
+    border: 3px solid #9613d7;
+    border-radius: 15px; 
+    background-color: black;
+    padding: 40px; /* Increased padding for more space inside */
+}
+
+.calculator #display {
+    width: calc(100% - 80px); /* Adjusted width to accommodate increased padding */
+    margin-bottom: 20px; /* Increased margin bottom for spacing */
+    padding: 20px; /* Increased padding for larger display */
+    font-size: 24px; /* Increased font size for better readability */
+}
+
+.calculator .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; /* Increased grid gap for spacing between buttons */
+}
+
+.calculator .keys button {
+    padding: 20px; /* Increased padding for larger buttons */
+    font-size: 24px; /* Increased font size for better readability */
+    border: none;
+    border-radius: 15px; /* Increased border radius for a rounder appearance */
+    cursor: pointer;
+    background-color: #9613d7;
+}
+
+.calculator .keys button:hover {
+    background-color: #e112a0;
+}
